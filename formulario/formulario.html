@@ -8,40 +8,53 @@
 </head>
 <body>
     <form>
-        <label for="nome">Nome</label>
-        <input type="text"  name="nome" id="nome" placeholder="Digite seu nome..." required/>
-        
-        <label for="email">E-mail</label>
-        <input type="text" name="email" id="email" placeholder="Digite seu e-mail..." required/>
-        
-        <label for="descricao">Descrição</label>
-        <textarea placeholder="Fale mais sobre você aqui..." name="descricao" id="descricao"  
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text"  name="nome" id="nome" placeholder="Digite seu nome..." required/>
+        </div>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu e-mail..." required/>
+        </div>
+
+        <div>
+            <label for="descricao">Descrição</label>
+            <textarea placeholder="Fale mais sobre você aqui..." name="descricao" id="descricao"  
          cols="22" rows="5"></textarea>
-    
-        <label for="select">Modulo</label>
-        <select name="modulo" id="select" required>
-            <option value="">Escolha o modulo</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="javaScript">JavaScript</option>
-            <option value="python">Python</option>
-        </select>
+         </div>
         
-        <label for="senha">Senha</label>
-        <input type="password" placeholder="Digite sua senha aqui..." name="senha" id="senha" required/>
+         <div>
+            <label for="select">Modulo</label>
+            <select name="modulo" id="select" required>
+                <option value="">Escolha o modulo</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javaScript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
 
-        <label for="confirmarSenha">Confirmar Senha</label>
-        <input type="password" placeholder="Digete sua senha novamente aqui.." name="confirmarSenha" 
-        id="confirmarSenha" required>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" placeholder="Digite sua senha aqui..." name="senha" id="senha" required/>
+        </div>
+        
+        <div>
+            <label for="confirmarSenha">Confirmar Senha</label>
+            <input type="password" placeholder="Digete sua senha novamente aqui.." name="confirmarSenha" 
+             id="confirmarSenha" required>
+        </div>
 
-        <p>Deseja receber novidades no seu e-mail?</p>
-        <label for="sim">Sim</label>
-        <input type="radio" required name="novidadesPorEmail" id="sim" value="sim">
+        <div>
+            <p>Deseja receber novidades no seu e-mail?</p>
+            <label for="sim">Sim</label>
+            <input type="radio" required name="novidadesPorEmail" id="sim" value="sim">
+            <label for="nao">Não</label>
+            <input type="radio" required name="novidadesPorEmail" id="nao" value="nao">
 
-        <label for="nao">Não</label>
-        <input type="radio" required name="novidadesPorEmail" id="nao" value="nao">
-
-        <button type="submit">Cadastrar</button>
+            <button type="submit">Cadastrar</button>
+        </div>
     </form>
 </body>
 </html>
