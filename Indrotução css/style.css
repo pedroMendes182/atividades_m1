@@ -1,0 +1,44 @@
+.text-center{
+    text-align: center
+}
+
+.title-main{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    font-weight: 700;
+}
+
+.font-size{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.color-blue{
+    color: #227df2;
+}
+
+.background-blue{
+    background-color: #3662FF;
+    color: #fefeff;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 40px;
+    
+}
+.style-ul{
+    line-height: 40px;
+    text-decoration: underline;
+}
+
+.background-black{
+    background-color: black;
+    color: #fefeff;
+    padding: 10px;
+}
+
+.quebra-de-linha{
+    font-weight: 300;
+} 

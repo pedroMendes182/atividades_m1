@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro evento Kenzie</title>
+    <link rel="stylesheet" href="./styleformulario.css">
 </head>
 <body>
     <form>
-        <div>
+        <div class="input nome">
             <label for="nome">Nome</label>
             <input type="text"  name="nome" id="nome" placeholder="Digite seu nome..." required/>
         </div>
 
-        <div>
+        <div class="input email">
             <label for="email">E-mail</label>
             <input type="text" name="email" id="email" placeholder="Digite seu e-mail..." required/>
         </div>
 
-        <div>
-            <label for="descricao">Descrição</label>
+        <div class="textarea">
+            <label for="descricao" class="descricao">Descrição</label>
             <textarea placeholder="Fale mais sobre você aqui..." name="descricao" id="descricao"  
          cols="22" rows="5"></textarea>
          </div>
@@ -35,12 +36,12 @@
             </select>
         </div>
 
-        <div>
+        <div class="input senha">
             <label for="senha">Senha</label>
             <input type="password" placeholder="Digite sua senha aqui..." name="senha" id="senha" required/>
         </div>
         
-        <div>
+        <div class="input senha2">
             <label for="confirmarSenha">Confirmar Senha</label>
             <input type="password" placeholder="Digete sua senha novamente aqui.." name="confirmarSenha" 
              id="confirmarSenha" required>
