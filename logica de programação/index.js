@@ -110,3 +110,68 @@
 // console.log(comparacaoDeValores);
 
 // -------------------------------------
+
+// let idade        = 20
+// let avaliarIdade = idade > 18 && idade < 25
+
+// if (avaliarIdade){
+    
+//     console.log(`A idade está entre 18 e 25`)
+// }else {
+
+//     console.log(`A idade não está entre 18 e 25`)
+// }
+
+// -------------------------------------
+
+// let carroNome   = "Chevrolet"
+// let carroAno    = 2017
+
+
+// if (carroNome == "Chevrolet" && carroAno == 2019){
+//     console.log("Carro encontrado")
+// }else{
+//     console.log("Carro não encontrado")
+// }
+
+// -------------------------------------
+
+// let botaoMenu     = false
+// let avaliarClick  = !botaoMenu
+
+// if (avaliarClick == false){
+//     console.log("abrir menu")
+// }else{
+//     console.log("fechar menu")
+// }
+
+// -------------------------------------
+
+// let usuarioAutenticado = !true
+
+// if(usuarioAutenticado){
+//     console.log("Seja bem vindo")
+// }else {
+//     console.log("tente novamente")
+// }
+
+// -------------------------------------
+
+// let usuario = "Ana"
+// let auntenticado = !false
+
+// if(usuario == "Ana" && auntenticado == true){
+//     console.log(`Olá ${usuario} você está autenticado `)
+// }
+
+// -------------------------------------
+
+let produto                         = "maçã"
+let quantidadeDoProduto             = 10
+let quantidadeDoProdutoParaPromocao = 5 - quantidadeDoProduto
+
+if(produto = "maçã" && quantidadeDoProduto >= 5){
+    console.log(`você recebeu uma promoção, o valor da ${produto} será R$5,00`)
+}else{
+    console.log(`Se você adcionar mais ${quantidadeDoProdutoParaPromocao}  ${produto}(s) o valor sairá por R$5,00`)
+}
