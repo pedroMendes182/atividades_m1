@@ -166,12 +166,172 @@
 
 // -------------------------------------
 
-let produto                         = "maçã"
-let quantidadeDoProduto             = 10
-let quantidadeDoProdutoParaPromocao = 5 - quantidadeDoProduto
+// let produto                         = "maçã"
+// let quantidadeDoProduto             = 10
+// let quantidadeDoProdutoParaPromocao = 5 - quantidadeDoProduto
 
-if(produto = "maçã" && quantidadeDoProduto >= 5){
-    console.log(`você recebeu uma promoção, o valor da ${produto} será R$5,00`)
-}else{
-    console.log(`Se você adcionar mais ${quantidadeDoProdutoParaPromocao}  ${produto}(s) o valor sairá por R$5,00`)
+// if(produto = "maçã" && quantidadeDoProduto >= 5){
+//     console.log(`você recebeu uma promoção, o valor da ${produto} será R$5,00`)
+// }else{
+//     console.log(`Se você adcionar mais ${quantidadeDoProdutoParaPromocao}  ${produto}(s) o valor sairá por R$5,00`)
+// }
+
+// -------------------------------------
+
+// let numero1 = parseInt(prompt("Insira um numero Inteiro aqui"))
+
+// alert(`Seu numero é o ${numero1}`)
+
+// -------------------------------------
+
+// let numero1 = parseInt(prompt("Insira um numero inteiro"))
+// let numero2 = parseInt(prompt("Insira mais um numero inteiro"))
+// let numero3 = parseInt(prompt("Insira o ultimo numero inteiro"))
+
+// let totalSoma = numero1 + numero2 + numero3
+
+// alert(`O resultado da soma desses numeros é igual a: ${totalSoma}`)
+
+// -------------------------------------
+
+// let nota1 = parseInt(prompt("Nota do primeiro semestre"))
+// let nota2 = parseInt(prompt("Nota do segundo semestre"))
+
+// let mediaAnual = (nota1 + nota2) / 2
+
+// alert(`A media anual é: ${parseFloat(mediaAnual)}`)
+
+// -------------------------------------
+
+// let numero1 = parseInt(prompt("Insira um numero inteiro aqui"))
+
+// let resultadoDivisao = numero1 % 2 
+
+// if(resultadoDivisao == 0){
+// alert(`Seu numero é par`)
+// }else {
+//     alert(`Seu numero é impar`)
+// }
+
+// -------------------------------------
+
+// let numero1 = parseInt(prompt("Insira um numero inteiro aqui"))
+
+// let resultadoQuadrado = Math.pow(numero1, 2)
+
+// alert(`O quadrado desse numero é: ${resultadoQuadrado}`)
+
+// -------------------------------------
+
+// function somaNumeros(numb1 , numb2){
+    
+//     return numb1 + numb2  
+// }
+
+// console.log(somaNumeros(15 , 876))
+
+// -------------------------------------
+
+// function tipo (valor1, valor2){
+
+//     return valor1 * valor2    
+// }
+
+// let resultado = tipo(2, 3)
+// if(resultado == 6){
+
+//     resultado = true
+// }
+
+// console.log(`o valor ${resultado} é do tipo ${typeof(resultado)}`)
+
+// -------------------------------------
+
+// function somaDasNotas(nota1, nota2, nota3, nota4){
+
+//     if(typeof(nota1, nota2, nota3, nota4) === "number"){
+
+//         console.log(`A soma das notas bimestrais são: ${nota1 + nota2 + nota3 + nota4}`)
+//     }else{ 
+
+//         console.log("Os campos só podem receber números")
+// }
+// }
+
+// somaDasNotas(9, 4, 6, "7")
+
+// -------------------------------------
+
+// function soma(valor1, valor2, valor3, valor4){
+//     return valor1 + valor2 + valor3 + valor4
+// }
+
+// function media(value){
+//     return value / 4
+// }
+
+// function resultado(nota1, nota2, nota3, nota4){ 
+//     return media(soma(nota1, nota2, nota3, nota4))
+// }
+
+// console.log('Média do aluno Carlos: ' + resultado(5, 6, 8, 9))
+
+// -------------------------------------
+function converterParaCelsius(tempFinal, valorDaTemperatura){
+    
+    if (tempFinal === "fahrenheit"){
+        return valorDaTemperatura * 1.8 + 32        
+    }
+    if (tempFinal === "kelvin"){
+        return valorDaTemperatura + 273
+    }
+        
+} 
+
+function converterParaKelvin(tempFinal, valorDaTemperatura){
+
+    if (tempFinal === "fahrenheit"){
+        return (valorDaTemperatura-32) * 5 / 9 + 273
+    }
+    if (tempFinal === "celsius"){
+        return valorDaTemperatura + 273
+    }
 }
+
+function converterParaFahrenheit(tempFinal, valorDaTemperatura){
+
+    if(tempFinal === "celsius"){
+        return valorDaTemperatura * 1.8 + 32
+    }
+    if(tempFinal === "kelvin"){
+        return (valorDaTemperatura-273) * 1.8 + 32
+    }
+}
+
+
+function converterTemperaturas(Temperatura, tipoDetemperatura, tipoFinaldaTemperatura){
+
+        if (tipoDetemperatura === "fahrenheit" || "kelvin"){
+            if (tipoFinaldaTemperatura === "celsius"){
+   
+                console.log(converterParaCelsius(tipoDetemperatura, Temperatura))
+        }
+    }
+        
+        if (tipoDetemperatura === "kelvin" || "celsius"){
+            if(tipoFinaldaTemperatura === "fahrenheit"){
+                console.log(converterParaFahrenheit(tipoDetemperatura,Temperatura))
+        }
+    }
+
+        if (tipoDetemperatura === "fahrenheit" || "celsius"){
+            if(tipoFinaldaTemperatura === "kelvin"){
+                console.log(converterParaKelvin(tipoDetemperatura,Temperatura))
+    }
+    }   
+        if(tipoDetemperatura === tipoFinaldaTemperatura){
+            console.log("Digite um tipo diferente do atual para ser convertido")
+        }
+}
+      
+converterTemperaturas(270, "celsius", "celsius")
