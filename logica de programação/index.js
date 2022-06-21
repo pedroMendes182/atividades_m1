@@ -277,61 +277,139 @@
 // console.log('Média do aluno Carlos: ' + resultado(5, 6, 8, 9))
 
 // -------------------------------------
-function converterParaCelsius(tempFinal, valorDaTemperatura){
+
+// function converterParaCelsius(tempFinal, valorDaTemperatura){
     
-    if (tempFinal === "fahrenheit"){
-        return valorDaTemperatura * 1.8 + 32        
-    }
-    if (tempFinal === "kelvin"){
-        return valorDaTemperatura + 273
-    }
+//     if (tempFinal === "fahrenheit"){
+//         return valorDaTemperatura * 1.8 + 32        
+//     }
+//     if (tempFinal === "kelvin"){
+//         return valorDaTemperatura + 273
+//     }
         
-} 
+// } 
 
-function converterParaKelvin(tempFinal, valorDaTemperatura){
+// function converterParaKelvin(tempFinal, valorDaTemperatura){
 
-    if (tempFinal === "fahrenheit"){
-        return (valorDaTemperatura-32) * 5 / 9 + 273
-    }
-    if (tempFinal === "celsius"){
-        return valorDaTemperatura + 273
-    }
-}
+//     if (tempFinal === "fahrenheit"){
+//         return (valorDaTemperatura-32) * 5 / 9 + 273
+//     }
+//     if (tempFinal === "celsius"){
+//         return valorDaTemperatura + 273
+//     }
+// }
 
-function converterParaFahrenheit(tempFinal, valorDaTemperatura){
+// function converterParaFahrenheit(tempFinal, valorDaTemperatura){
 
-    if(tempFinal === "celsius"){
-        return valorDaTemperatura * 1.8 + 32
-    }
-    if(tempFinal === "kelvin"){
-        return (valorDaTemperatura-273) * 1.8 + 32
-    }
-}
+//     if(tempFinal === "celsius"){
+//         return valorDaTemperatura * 1.8 + 32
+//     }
+//     if(tempFinal === "kelvin"){
+//         return (valorDaTemperatura-273) * 1.8 + 32
+//     }
+// }
 
 
-function converterTemperaturas(Temperatura, tipoDetemperatura, tipoFinaldaTemperatura){
+// function converterTemperaturas(Temperatura, tipoDetemperatura, tipoFinaldaTemperatura){
 
-        if (tipoDetemperatura === "fahrenheit" || "kelvin"){
-            if (tipoFinaldaTemperatura === "celsius"){
+//         if (tipoDetemperatura === "fahrenheit" || "kelvin"){
+//             if (tipoFinaldaTemperatura === "celsius"){
    
-                console.log(converterParaCelsius(tipoDetemperatura, Temperatura))
-        }
-    }
+//                 console.log(converterParaCelsius(tipoDetemperatura, Temperatura))
+//         }
+//     }
         
-        if (tipoDetemperatura === "kelvin" || "celsius"){
-            if(tipoFinaldaTemperatura === "fahrenheit"){
-                console.log(converterParaFahrenheit(tipoDetemperatura,Temperatura))
-        }
-    }
+//         if (tipoDetemperatura === "kelvin" || "celsius"){
+//             if(tipoFinaldaTemperatura === "fahrenheit"){
+//                 console.log(converterParaFahrenheit(tipoDetemperatura,Temperatura))
+//         }
+//     }
 
-        if (tipoDetemperatura === "fahrenheit" || "celsius"){
-            if(tipoFinaldaTemperatura === "kelvin"){
-                console.log(converterParaKelvin(tipoDetemperatura,Temperatura))
-    }
-    }   
-        if(tipoDetemperatura === tipoFinaldaTemperatura){
-            console.log("Digite um tipo diferente do atual para ser convertido")
-        }
-}
+//         if (tipoDetemperatura === "fahrenheit" || "celsius"){
+//             if(tipoFinaldaTemperatura === "kelvin"){
+//                 console.log(converterParaKelvin(tipoDetemperatura,Temperatura))
+//     }
+//     }   
+//         if(tipoDetemperatura === tipoFinaldaTemperatura){
+//             console.log("Digite um tipo diferente do atual para ser convertido")
+//         }
+// }
       
-converterTemperaturas(270, "celsius", "celsius")
+// converterTemperaturas(270, "celsius", "celsius")
+
+// -------------------------------------
+
+// let nomeCompetidores = ["Pedro", "Lucas", "Luis", "Carlos", "Alex"]
+
+// console.log(nomeCompetidores[0])
+
+// -------------------------------------
+
+// let nomeCompetidores = ["Pedro", "Lucas", "Luis", "Carlos", "Alex"]
+
+// console.log(nomeCompetidores.length)
+// console.log(nomeCompetidores[4])
+
+// -------------------------------------
+
+// function montandoPodio(competidor, posicao) {
+//     console.log(`O competidor ${competidor[0]} ficou em ${posicao[0]}º colocado`)
+//     console.log(`O competidor ${competidor[1]} ficou em ${posicao[1]}º colocado`)
+//     console.log(`O competidor ${competidor[2]} ficou em ${posicao[2]}º colocado`)
+//     console.log(`O competidor ${competidor[3]} ficou em ${posicao[3]}º colocado`)
+//     console.log(`O competidor ${competidor[4]} ficou em ${posicao[4]}º colocado`)   
+// }
+
+// let nomeCompetidores = ["Pedro", "Lucas", "Luis", "Carlos", "Alex"]
+// let podio            = [1, 2 , 3, 4, 5]
+
+// montandoPodio(nomeCompetidores, podio)
+
+// -------------------------------------
+
+// function testaPosicao(lista, posicao) {
+//     if (lista[posicao] == "Vou ser Dev" ) {
+//     console.log(`O cliente ganhou o premio!`)
+//     } else {
+//         console.log(`O cliente não ganhou o premio!`)
+//     }    
+//   }
+//   
+//   let carrinhoDeCompras =
+//   [
+//    "Funko Pop Kakashi",
+//    "Dragon Ball Collection",
+//    "Vou ser Dev"
+//   ]
+//   testaPosicao(carrinhoDeCompras, (0, 1, 2))
+
+// -------------------------------------
+
+// function qualTipoDeElemento(lista, posicao){
+//     if (typeof(lista[posicao]) ==  "number"){
+//         console.log(`O elemento é "number"`)
+//     } else {
+//         console.log(`O elemento não é "number"`)
+//     }
+// }
+
+// let tiposDiversos =[1.5,"String",true,10]
+  
+// qualTipoDeElemento(tiposDiversos, 2)
+
+// -------------------------------------
+
+function ganhadorBilhete(passageiro, poltronaPremiada) {
+    if (poltronaPremiada === 1){
+        console.log(`${passageiro[0]} sentou na poltrona premiada`)
+    } else if (poltronaPremiada === 2) {
+        console.log(`${passageiro[1]} sentou na poltona premiada`)
+    } else {
+        console.log(`${passageiro[2]} sentou na poltrona premiada`)
+    }
+}
+
+let passageiro      =  ["Carlos", "Bruno", "Ricardo"]
+let poltronaPremiada = Math.floor(Math.random() * (4 - 1) + 1)
+
+ganhadorBilhete(passageiro, poltronaPremiada)
